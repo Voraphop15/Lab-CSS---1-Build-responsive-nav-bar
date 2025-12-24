@@ -1,0 +1,79 @@
+/* Set Font */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+    color: brown;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(135deg,
+  #f2e2cf 0%,
+  #e2c4a2 25%,
+  #cfa67a 50%,
+  #b58455 75%,
+  #9a6b3f 100%
+);
+    min-height: 1vh;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#nav-bar {
+    display: flex;
+    background: #d39a65;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+#nav-bar .logo {
+    font-size: 44px;
+    font-weight: 500;
+    color: rgb(143, 98, 61);
+    display: inline-block;
+    position: relative;
+    animation: logoShake 2s ease-in-out infinite alternate;
+}
+
+@keyframes logoShake {
+    0% { left: 0; }
+    50% { left: 5px; }
+    100% { left: -5px; }
+}
+
+#nav-bar .nav-bar-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+#nav-bar .nav-bar-links li a {
+    text-decoration: none;
+    color: rgb(143, 98, 61);
+    font-size: 29px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+#nav-bar .nav-bar-links li a:hover {
+    background-color: rgb(143, 98, 61);
+    color: white;
+}
+
+#nav-bar .nav-bar-links li a.active {
+    background-color: rgb(182, 133, 94);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+
